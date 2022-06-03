@@ -1,0 +1,313 @@
+<link rel="stylesheet" href="styles.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div class="heading">
+      <div class="container">
+        <h1 id="title">Airline Food Survey</h1>
+        <h2 id="sub-title">
+          Let us take you on a culinary journey to your destination
+        </h2>
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde,
+          numquam asperiores placeat quis ut autem at debitis, fugit quibusdam
+          omnis!
+        </p>
+
+        <img
+          class="img"
+          src="https://i.postimg.cc/m2VSWTph/airplane-clipart-transparent-20.png"
+          alt="airplane-flying"
+        />
+      </div>
+    </div>
+
+    <form id="survey-form">
+      <div class="personal-info">
+        <div class="container">
+          <ul class="personal-info__list">
+            <li>
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                class="personal-info__data"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </li>
+            <li>
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="email"
+                class="personal-info__data"
+                id="email"
+                name="email"
+                placeholder="Email@"
+                required
+              />
+            </li>
+            <li>
+              <label for="number" id="number-label">Age</label>
+              <input
+                type="number"
+                class="personal-info__data"
+                id="number"
+                name="age"
+                min="1"
+                max="115"
+                placeholder="25"
+                required
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="flight-details">
+          <div class="container">
+            <h3>Which airport in Canada are you departing from?</h3>
+            <select id="dropdown" name="vancouver-international">
+              <option value="yvr-international">
+                YVR International Airport
+              </option>
+              <option value="victoria-international">
+                YYJ Victoria International Airport
+              </option>
+              <option value="calgary-international">
+                YYC Calgary International Airport
+              </option>
+              <option value="edmonton-international">
+                YEG Edmonton International Airport
+              </option>
+              <option value="saskatoon-internatinal">
+                YXE Saskatoon International Airport
+              </option>
+              <option value="regina-international">
+                YQR Regina International Airport
+              </option>
+              <option value="winnipeg-international">
+                YWG Winnipeg International Airport
+              </option>
+              <option value="toronto-international">
+                YYZ Toronto Pearson International Airport
+              </option>
+              <option value="london-international">
+                YXU London Internationl Airport
+              </option>
+              <option value="ottawa-international">
+                YOW Ottawa Macdonald–Cartier International Airport
+              </option>
+              <option value="montreal-international">
+                YUL Montréal–Trudeau International Airport
+              </option>
+              <option value="quebec-international">
+                YQB Quebec-Jean Lesage International Airport
+              </option>
+              <option value="fredericton-international">
+                YFC Fredericton International Airport
+              </option>
+              <option value="moncton-international">
+                YQM Greater Moncton Roméo LeBlanc International Airport
+              </option>
+              <option value="halifax-international">
+                YHZ Halifax International Airport
+              </option>
+              <option value="charlottetown-airport">
+                YYG Charlottetown Airport
+              </option>
+              <option value="st-johns-international">
+                YYT St Johns International Airport
+              </option>
+              <option value="gander-airport">YQX Gander Airport</option>
+              <option value="yukon-airport">
+                YXY Erik Nielsen Whitehorse International Airport
+              </option>
+              <option value="yellowknife-airport">
+                YXU Yellowknife Airport
+              </option>
+              <option value="nunavut-airport">YFB Iqaluit Airport</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="flight-details">
+          <div class="container">
+            <h3>Which province or territory are you flying to today</h3>
+            <select id="destintion" name="desination">
+              <optgroup label="Provinces">
+                <option value="bc">British Columbia</option>
+                <option value="ab">Alberta</option>
+                <option value="sk">Saskatchewan</option>
+                <option value="mb">Manitoba</option>
+                <option value="on">Ontario</option>
+                <option value="qc">Quebec</option>
+                <option value="nb">New Brunswick</option>
+                <option value="ns">Nova Scotia</option>
+                <option value="pei">Prince Edward Island</option>
+                <option value="nl">Newfoundland and Labrador</option>
+              </optgroup>
+              <optgroup label="Territories">
+                <option value="yukon">Yukon</option>
+                <option value="nwt">North West Territories</option>
+                <option value="nunavut">Nunavut</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="options">
+            <fieldset>
+              <legend>
+                <h3>
+                  Which Of Our New Meal Options Most Interests You? (choose one)
+                </h3>
+              </legend>
+              <ul class="food__list">
+                <li>
+                  <label for="mac-n-cheese"
+                    >Mac and Cheese (vegetarian)
+                    <input
+                      type="radio"
+                      name="new-options"
+                      id="mac-n-cheese"
+                      value="mac-n-cheese"
+                    />
+                  </label>
+                </li>
+                <li>
+                  <label for="salmon-risotto"
+                    >Salmon Risotto
+                    <input
+                      type="radio"
+                      name="new-options"
+                      id="salmon-risotto"
+                      value="salmon risotto"
+                    />
+                  </label>
+                </li>
+                <li>
+                  <label for="rainbow-wrap">
+                    Rainbow vegetable and Hummus Wrap (vegan)
+                    <input
+                      type="radio"
+                      name="new-options"
+                      id="rainbow-wrap"
+                      value="rainbow-wrap"
+                    />
+                  </label>
+                </li>
+                <li>
+                  <label for="channa-masala">
+                    Channa Masala (vegan)
+                    <input
+                      type="radio"
+                      name="new-options"
+                      id="channa-masala"
+                      value="channa-masala"
+                    />
+                  </label>
+                </li>
+                <li>
+                  <label for="irish-stew">
+                    Irish Stew
+                    <input
+                      type="radio"
+                      name="new-options"
+                      id="irish-stew"
+                      value="irish-stew"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <!--ends options-->
+        </div>
+        <!--ends container-->
+
+        <div class="container">
+          <img
+            class="imgfood"
+            src="https://i.postimg.cc/Wp7Wg5g6/IMG-0198-Edit.jpg"
+            alt="vegetable rainbow wraps"
+          />
+        </div>
+
+        <div class="container diet">
+          <h3>Do you have any dietry requirements?</h3>
+          <ul class="preferences">
+            <li>
+              <label for="no-preference">
+                No preference
+                <input
+                  type="checkbox"
+                  id="no-preference"
+                  name="preference"
+                  value="no-preference"
+              /></label>
+            </li>
+
+            <li>
+              <label for="vegetarian">
+                Vegetarian
+                <input
+                  type="checkbox"
+                  id="vegetarian"
+                  name="preference"
+                  value="vegetarian"
+              /></label>
+            </li>
+
+            <li>
+              <label for="vegan"
+                >Vegan
+                <input
+                  type="checkbox"
+                  id="vegan"
+                  name="preference"
+                  value="vegan"
+              /></label>
+            </li>
+
+            <li>
+              <label for="gluten-free"
+                >Gluten Free<input
+                  type="checkbox"
+                  id="gluten-free"
+                  name="preference"
+                  value="gluten-free"
+              /></label>
+            </li>
+
+            <li>
+              <label for="nut-allergy"
+                >Nut Allergy<input
+                  type="checkbox"
+                  id="nut-allergy"
+                  name="preference"
+                  value="nut-allergy"
+              /></label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container">
+          <footer class="comments">
+            <label for="comments"
+              >Have a suggestion? We would love to hear your feedback!</label
+            >
+
+            <textarea id="comments"></textarea>
+            <button type="submit" id="submit" value="submit">Submit</button>
+          </footer>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
